@@ -14,7 +14,9 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 #### Clone AstroNvim
 
 ```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+# remove template's git connection to set up your own later
+rm -rf ~/.config/nvim/.git
 ```
 
 #### Create a new user repository from this template
